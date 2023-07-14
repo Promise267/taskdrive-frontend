@@ -117,11 +117,11 @@ export default function AddNote() {
         ></textarea>
         {location.state.editTitle === "Edit" ? (
           <button type="submit" onClick={handleEdit}>
-            <FontAwesomeIcon icon={faPlus} />
+            <FontAwesomeIcon icon={faFileArrowUp} />
           </button>
         ) : (
           <button type="submit" onClick={handleAdd}>
-            <FontAwesomeIcon icon={faFileArrowUp} />
+            <FontAwesomeIcon icon={faPlus} />
           </button>
         )}
         </form>

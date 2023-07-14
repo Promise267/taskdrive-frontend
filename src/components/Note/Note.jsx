@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import * as api from '../../middleware/api';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPencil, faTrash, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faPencil, faTrash, faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons';
 import Header from '../Header';
 import Footer from '../Footer';
 
@@ -109,7 +109,7 @@ export default function Note() {
           <div className="col d-flex justify-content-end">
             <Link to={{ pathname: `/collection/${id}/newnote` }} state={{ collectionId: id }}>
               <button type="button" className="btn btn-primary me-2 px-4 py-3">
-                Create +
+                Create <FontAwesomeIcon icon={faPlus}/>
               </button>
             </Link>
             <button
